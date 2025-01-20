@@ -6,9 +6,9 @@ import java.sql.PreparedStatement;
 
 public class DatabaseConnection {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/vehicle_parking";
+        String url = "jdbc:mysql://localhost:3306/?user=root";
         String user = "root";
-        String password = "srimathi@123";
+        String password = "password";
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             // Example of inserting into Vehicles table
