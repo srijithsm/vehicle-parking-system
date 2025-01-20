@@ -10,9 +10,9 @@ import java.time.temporal.ChronoUnit;
 
 public class ParkingManager {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/vehicle_parking";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/?user=root";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "srimathi@123";
+    private static final String DB_PASSWORD = "password";
 
     public ParkingManager() {
         // Initialize database connection if needed
